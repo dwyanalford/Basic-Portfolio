@@ -4,6 +4,7 @@ body {
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	color: #777777;
 	margin: 0 auto;
+	background-color: lightgrey;
 }
 h1, h2 {
 	font-family: 'Georgia', Times, Times New Roman, serif;
@@ -16,6 +17,7 @@ h1 {
 	height: 96px;
 	position: relative;
 	border-bottom: 2px solid #cdcdcd;
+	background-color: #fff;
 }
 header {
 	float: left;
@@ -47,21 +49,22 @@ nav a {
 }
 #content-background {
 	width: 960px;
-	height: 500px;
-	background-color: lightgrey;
+	min-height: 500px;
+	/*background-color: lightgrey;
+	position: relative;*/
 }
 section, aside {
 	background-color: #ffffff;
 }
 section {
     width: 500px;
-    height: auto;
+    min-height: 300px;
     float: left;
     margin-left: 67px;
     margin-top: 36px;
     padding: 30px;
     border: 1px solid #cdcdcd;
-    position: relative;
+    /*position: relative;*/
 }
 section h1, aside h2 {
 	font-weight: bold;
@@ -70,10 +73,34 @@ section h1, aside h2 {
 }
 section img {
 	float: left;
+	border: 2px solid #4aaaa5;
 }
-section p {
-	width: 400px;
+/*This p-style id changes paragraph 1 ONLY of About Me Section*/
+#p-style {
+    width: 230px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 50px;
+    border-bottom: 1px grey solid;
+    padding-bottom: 10px;
+    line-height: 17px;
+}
+section p:last-child {
+  	width: 500px;
+  	margin-left: 0px;
+  	margin-top: 20px;
+  	float: left;
+}
+.folio1 {
+	background-color: #4aaaa5;
+	width: 200px;
+	height: 173px;
 	float: left;
+	margin-right: 50px;
+	margin-bottom: 50px;
+	margin-top: 25px;
+	text-align: center;
+	color: white;
 }
 aside {
 	width: 220px;
@@ -96,4 +123,5 @@ footer {
 }
 footer p {
 	margin-top: 40px;
+	font-size: 14px;
 }
